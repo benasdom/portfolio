@@ -1,361 +1,273 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BEN — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Righteous&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benjamin Domfeh — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
  <script src="script.js" defer></script>
+
 </head>
+
 <body>
 
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
+<div id="cur"></div>
+<div id="cur-r"></div>
+<button id="tb">☀</button>
 
-  <!-- THEME TOGGLE -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+<nav>
+  <a href="#home">home</a>
+  <a href="#about">about</a>
+  <a href="#skills">skills</a>
+  <a href="#experience">exp</a>
+  <a href="#projects">projects</a>
+  <a href="#contact">contact</a>
+</nav>
 
-  <!-- NAV -->
-  <header id="header">
-    <nav>
-      <a href="#home">Intro</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- HERO -->
+<section id="home">
+  <div class="amb ap" style="width:520px;height:520px;top:-12%;left:-10%;animation:f1 14s ease-in-out infinite;"></div>
+  <div class="amb ab" style="width:420px;height:420px;bottom:-8%;right:-6%;animation:f2 11s ease-in-out infinite;"></div>
+  <div class="amb ac" style="width:260px;height:260px;top:58%;left:54%;animation:f3 9s ease-in-out infinite;"></div>
+  <div class="hgrid"></div>
+  <div class="hi">
+    <div class="hbadge">Available for work</div>
+    <div class="hname">
+      <span class="s">Ben</span><span class="g">jamin</span><br>
+      <span class="s">Dom</span>feh
+    </div>
+    <div class="hsub">Software Engineer &amp; Creative Developer — Accra, Ghana</div>
+    <div class="hctas">
+      <a href="#projects" class="bp">View work ↓</a>
+      <a href="https://github.com/benasdom" target="_blank" class="bg">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/benjamin-domfeh-79b372309/" target="_blank" class="bg">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="sc">
+    <span>Scroll</span>
+    <div class="sl"></div>
+  </div>
+</section>
 
-  <!-- ===== HERO ===== -->
-  <section class="home" id="home">
-    <div class="ambient" id="amb1"></div>
-    <div class="ambient" id="amb2"></div>
-    <div class="ambient" id="amb3"></div>
-    <div class="hero-bg-grid"></div>
-
-    <div class="text">
-      <div class="hero-title-text">
-        <span class="grad">Ben</span>jamin
+<!-- ABOUT -->
+<section id="about">
+  <div class="amb ab" style="width:360px;height:360px;top:4%;right:1%;animation:f2 13s ease-in-out infinite;opacity:.6;"></div>
+  <div class="ey r">00 — about</div>
+  <div class="st r">Who I <em>am</em></div>
+  <div class="abl">
+    <div class="rl">
+      <div class="sgrid">
+        <div class="sc2"><div class="sn">3+</div><div class="sl2">Years building</div></div>
+        <div class="sc2"><div class="sn">200+</div><div class="sl2">Tasks to production</div></div>
+        <div class="sc2"><div class="sn">100%</div><div class="sl2">QC score</div></div>
+        <div class="sc2"><div class="sn">300+</div><div class="sl2">CodeWars pts</div></div>
       </div>
-      <div class="minor-text">Software Engineer &amp; Creative Developer</div>
-      <div class="hero-links">
-        <a href="#projects" class="hero-link filled">View Work</a>
-        <a href="https://github.com/benasdom" target="_blank" class="hero-link">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/benjamin-domfeh-79b372309/" target="_blank" class="hero-link">LinkedIn ↗</a>
-      </div>
-      <div class="scroll-cue">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
+      <div class="chips">
+        <span class="chip">JavaScript</span><span class="chip">Python</span>
+        <span class="chip">React Native</span><span class="chip">React JS</span>
+        <span class="chip">Node.js</span><span class="chip">PHP / Laravel</span>
+        <span class="chip">Firebase</span><span class="chip">Expo</span>
+        <span class="chip">Redux</span><span class="chip">Figma</span>
+        <span class="chip">Prompt Engineering</span><span class="chip">Markdown / LaTeX</span>
+        <span class="chip">REST APIs</span><span class="chip">Git</span>
+        <span class="chip">Netlify</span><span class="chip">Cloudflare</span>
       </div>
     </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about">
-    <div class="ambient" id="amb4"></div>
-    <div class="section-label">00 — About</div>
-    <div class="section-title reveal">Who I <br><em>Am</em></div>
-
-    <div class="stats-row reveal">
-      <div class="stat-item">
-        <div class="stat-num">3+</div>
-        <div class="stat-label">Years Building</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">200+</div>
-        <div class="stat-label">Tasks to Production</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">QC Score</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">300+</div>
-        <div class="stat-label">CodeWars Points</div>
-      </div>
+    <div class="abio rr">
+      <p>I'm <strong>Benjamin Asumadu Domfeh</strong> — a software engineer building purposeful web and mobile experiences from Accra, Ghana, with over 3 years of freelance and contract work across clients in Ghana, the UK, and beyond.</p>
+      <p>My work spans <strong>full-stack mobile apps</strong> with Expo and Firebase, <strong>Python automation</strong> for UK clients, and <strong>AI data training</strong> — probing the limits of large language models for Invisible Technologies on Microsoft and Cohere projects.</p>
+      <p>200+ tasks shipped to production with a <strong>100% quality control score</strong>. I've found failure modes in ChatGPT, Gemini, Claude, and Perplexity — DSA edge cases, complex regex, matrix operations, and ASCII art that leading models couldn't solve.</p>
+      <p>BSc Psychology (University of Ghana) — giving me an unusual lens for how people interact with interfaces and how AI models thought.</p>
     </div>
+  </div>
+</section>
 
-    <div class="about-grid">
-      <div class="about-bio reveal-left">
-        <p>I'm Benjamin Asumadu Domfeh — a software engineer based in Ghana with over 3 years of experience building user-centric web and mobile applications. My background blends engineering with Cognitive Psychology, giving me an unusual lens for understanding how people interact with software.</p>
-        <p>I've worked with global teams — from AI data training at Invisible Technologies on Microsoft and Cohere projects, to building full-stack mobile apps, web scrapers, and past-question platforms that drove real community growth.</p>
-        <p>My code has been held to strict quality standards: 200+ tasks pushed to production at a 100% QC score. I find bugs in LLMs, write robust edge cases, and ship things that work.</p>
-      </div>
-      <div class="reveal-right">
-        <div class="about-tags">
-          <span class="about-tag">JavaScript</span>
-          <span class="about-tag">Python</span>
-          <span class="about-tag">React Native</span>
-          <span class="about-tag">React JS</span>
-          <span class="about-tag">Node.js</span>
-          <span class="about-tag">PHP / Laravel</span>
-          <span class="about-tag">Firebase</span>
-          <span class="about-tag">Expo</span>
-          <span class="about-tag">Figma</span>
-          <span class="about-tag">Prompt Engineering</span>
-          <span class="about-tag">Markdown / LaTeX</span>
-          <span class="about-tag">DNS / Hosting</span>
-          <span class="about-tag">Redux</span>
-          <span class="about-tag">REST APIs</span>
-          <span class="about-tag">Git / GitHub</span>
-          <span class="about-tag">Netlify / Cloudflare</span>
-        </div>
-      </div>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="amb ap" style="width:300px;height:300px;top:8%;left:58%;animation:f1 12s ease-in-out infinite;opacity:.5;"></div>
+  <div class="ey r">01 — skills</div>
+  <div class="st r">What I <em>build with</em></div>
+  <div class="mw">
+    <div class="mt">
+      <span>JavaScript</span><span>Python</span><span>React Native</span><span>React JS</span>
+      <span>Node.js</span><span>PHP</span><span>Laravel</span><span>Firebase</span>
+      <span>Expo</span><span>Redux</span><span>Figma</span><span>Git</span><span>Paystack</span>
+      <span>JavaScript</span><span>Python</span><span>React Native</span><span>React JS</span>
+      <span>Node.js</span><span>PHP</span><span>Laravel</span><span>Firebase</span>
+      <span>Expo</span><span>Redux</span><span>Figma</span><span>Git</span><span>Paystack</span>
     </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section id="skills">
-    <div class="ambient" id="amb5"></div>
-    <div class="section-label">01 — Skills</div>
-    <div class="section-title reveal">What I<br><em>Build With</em></div>
-
-    <div class="skills-marquee">
-      <div class="marquee-track">
-        <span>JavaScript</span><span>Python</span><span>React Native</span><span>React JS</span>
-        <span>Node.js</span><span>PHP</span><span>Laravel</span><span>Firebase</span>
-        <span>Expo</span><span>Redux</span><span>Figma</span><span>Git</span>
-        <span>JavaScript</span><span>Python</span><span>React Native</span><span>React JS</span>
-        <span>Node.js</span><span>PHP</span><span>Laravel</span><span>Firebase</span>
-        <span>Expo</span><span>Redux</span><span>Figma</span><span>Git</span>
-      </div>
+  </div>
+  <div class="cst">
+    <div class="skc kc1">
+      <div class="skf" style="background:linear-gradient(135deg,#f7df1e14,#f7df1e38);"><span style="color:#f7df1e;position:relative;z-index:2;">JS</span></div>
+      <div class="skl"><span>JavaScript</span><small>Logic &amp; Interactivity</small></div>
     </div>
-
-    <div class="container-2">
-      <div class="card card1">
-        <div class="card-inner">
-          <div class="card-glow"></div>
-          <div class="card-visual" style="background:linear-gradient(135deg,#f7df1e22,#f7df1e55);color:#f7df1e">JS</div>
-          <div class="card-footer"><span>JavaScript</span><small>Logic & Interactivity</small></div>
-        </div>
-      </div>
-      <div class="card card2">
-        <div class="card-inner">
-          <div class="card-glow"></div>
-          <div class="card-visual" style="background:linear-gradient(135deg,#3572A522,#3572A566);color:#3572A5">PY</div>
-          <div class="card-footer"><span>Python</span><small>Backend & AI Training</small></div>
-        </div>
-      </div>
-      <div class="card card3">
-        <div class="card-inner">
-          <div class="card-glow"></div>
-          <div class="card-visual" style="background:linear-gradient(135deg,#61DAFB22,#61DAFB55);color:#61DAFB">RN</div>
-          <div class="card-footer"><span>React Native</span><small>iOS, Android & Web</small></div>
-        </div>
-      </div>
-      <div class="card card4">
-        <div class="card-inner">
-          <div class="card-glow"></div>
-          <div class="card-visual" style="background:linear-gradient(135deg,#ff2d2022,#ff2d2055);color:#ff2d20">PHP</div>
-          <div class="card-footer"><span>PHP / Laravel</span><small>Server & CMS</small></div>
-        </div>
-      </div>
-      <div class="card card5">
-        <div class="card-inner">
-          <div class="card-glow"></div>
-          <div class="card-visual" style="background:linear-gradient(135deg,#FF900022,#FF900055);color:#FF9000">FB</div>
-          <div class="card-footer"><span>Firebase</span><small>Auth & Database</small></div>
-        </div>
-      </div>
+    <div class="skc kc2">
+      <div class="skf" style="background:linear-gradient(135deg,#4a9ede16,#4a9ede3a);"><span style="color:#4a9ede;position:relative;z-index:2;">PY</span></div>
+      <div class="skl"><span>Python</span><small>Backend &amp; AI Training</small></div>
     </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section id="experience">
-    <div class="ambient" id="amb6"></div>
-    <div class="section-label">02 — Experience</div>
-    <div class="section-title reveal">Where I've<br><em>Worked</em></div>
-
-    <div class="timeline">
-
-      <div class="timeline-item reveal-left">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="tl-year">Feb 2025 — Apr 2025</div>
-          <h3>AI Data Trainer & Operator Assistant</h3>
-          <p class="tl-company">Invisible Technologies — Microsoft Projects (QnA, Benchmarking, MMLU)</p>
-          <p>Engineered adversarial coding challenges to expose LLM weaknesses. Worked on Microsoft's QnA pairs, benchmarking pipeline, and multi-task language understanding projects. Maintained strict no-third-party-library protocols and sustained 100% QC scores.</p>
-          <div class="tl-tags"><span>Python</span><span>Prompt Engineering</span><span>Markdown</span><span>LaTeX</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal-right">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="tl-year">Jun 2024 — Sep 2024</div>
-          <h3>AI Data Trainer & Operator Assistant</h3>
-          <p class="tl-company">Invisible Technologies — Cohere Orochi Project</p>
-          <p>Discovered weaknesses in major LLMs (ChatGPT, Gemini, Claude, Perplexity) on DSA, regex, matrix operations, and ASCII art. Submitted 20–30 high-complexity tasks per week — all passing quality control. 200+ tasks shipped to production.</p>
-          <div class="tl-tags"><span>Python</span><span>DSA</span><span>Regex</span><span>Edge Cases</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal-left">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="tl-year">Nov 2024 — Jan 2025</div>
-          <h3>Software Developer</h3>
-          <p class="tl-company">Thrive UK — g_tree Scraper Project</p>
-          <p>Built a web scraper to pull job listings from permitted URLs, automated filtering for recency, handled credential persistence for sustained automation, and exported structured data to Excel/CSV with pagination support.</p>
-          <div class="tl-tags"><span>Python</span><span>Web Scraping</span><span>Automation</span><span>Excel/CSV</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal-right">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="tl-year">2022 — 2023</div>
-          <h3>Software Developer — React Native</h3>
-          <p class="tl-company">UnityElites Group — UE Commerce</p>
-          <p>Built a full e-commerce mobile app running on iOS, Android, and Web. Integrated Firebase auth, Paystack payments, Redux state management, and an email receipt system. Features: order tracking, checkout, customer accounts, and search filtering.</p>
-          <div class="tl-tags"><span>React Native</span><span>Expo</span><span>Firebase</span><span>Paystack</span><span>Redux</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal-left">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="tl-year">2023</div>
-          <h3>Software Developer — React JS</h3>
-          <p class="tl-company">UnityElites Group — UE Pasco (Past Questions Platform)</p>
-          <p>Built a free past-questions platform for university students across Ghana. Created custom API endpoints, a Telegram bot integration that grew the community, and a UI/UX that drove significant traffic from the University of Ghana and other institutions.</p>
-          <div class="tl-tags"><span>React JS</span><span>Telegram Bot API</span><span>API Design</span></div>
-        </div>
-      </div>
-
+    <div class="skc kc3">
+      <div class="skf" style="background:linear-gradient(135deg,#61DAFB18,#61DAFB40);"><span style="color:#61DAFB;position:relative;z-index:2;">RN</span></div>
+      <div class="skl"><span>React Native</span><small>iOS, Android &amp; Web</small></div>
     </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects">
-    <div class="section-label">03 — Projects</div>
-    <div class="section-title reveal">Selected<br><em>Work</em></div>
-
-    <div class="projects-grid">
-
-      <div class="project-card reveal-up">
-        <div class="project-img-wrap">
-          <div class="project-placeholder" style="background:linear-gradient(135deg,#61DAFB33,#0040ff44)">
-            <span class="proj-num">01</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>UE Commerce</h3>
-          <p>Full e-commerce app — iOS, Android & Web. Paystack payments, Firebase auth, Redux state, email receipts, and order tracking. Built with Expo.</p>
-          <div class="project-links">
-            <a href="https://github.com/benasdom" target="_blank" class="proj-link">Code ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal-up" style="animation-delay:.15s">
-        <div class="project-img-wrap">
-          <div class="project-placeholder" style="background:linear-gradient(135deg,#00ffaa33,#0040ff44)">
-            <span class="proj-num">02</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>UE Pasco</h3>
-          <p>Past questions platform for Ghanaian university students. Custom API, Telegram bot integration, and a UI that outperformed institutional alternatives.</p>
-          <div class="project-links">
-            <a href="https://github.com/benasdom" target="_blank" class="proj-link">Code ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal-up" style="animation-delay:.3s">
-        <div class="project-img-wrap">
-          <div class="project-placeholder" style="background:linear-gradient(135deg,#3572A533,#ff00dd44)">
-            <span class="proj-num">03</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>g_tree Scraper</h3>
-          <p>Automated job-ad scraper for Thrive UK. Pulls listings from permitted URLs, filters by recency, persists credentials, and exports paginated Excel/CSV reports.</p>
-          <div class="project-links">
-            <a href="https://github.com/benasdom" target="_blank" class="proj-link">Code ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal-up" style="animation-delay:.45s">
-        <div class="project-img-wrap">
-          <div class="project-placeholder" style="background:linear-gradient(135deg,#ff440033,#ff00dd44)">
-            <span class="proj-num">04</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>PENSA-LEGON System</h3>
-          <p>Permission and credential management system for the Pentecost Students Association, Legon. Built with Laravel / PHP.</p>
-          <div class="project-links">
-            <a href="https://github.com/benasdom" target="_blank" class="proj-link">Code ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal-up" style="animation-delay:.6s">
-        <div class="project-img-wrap">
-          <div class="project-placeholder" style="background:linear-gradient(135deg,#ffaa0033,#00ffaa44)">
-            <span class="proj-num">05</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>NASA Consult Booking</h3>
-          <p>Booking and registration system for a travel & tours agency. Built with procedural PHP with a clean front-facing UI.</p>
-          <div class="project-links">
-            <a href="https://github.com/benasdom" target="_blank" class="proj-link">Code ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal-up" style="animation-delay:.75s">
-        <div class="project-img-wrap">
-          <div class="project-placeholder" style="background:linear-gradient(135deg,#0040ff33,#ff00dd44)">
-            <span class="proj-num">06</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>LLM Adversarial Suite</h3>
-          <p>A private collection of Python challenges that caused leading LLMs to fail — covering DSA, regex, ASCII art, matrix ops, and more. Used in production AI training.</p>
-          <div class="project-links">
-            <a href="https://github.com/benasdom" target="_blank" class="proj-link">Code ↗</a>
-          </div>
-        </div>
-      </div>
-
+    <div class="skc kc4">
+      <div class="skf" style="background:linear-gradient(135deg,#8892BF16,#8892BF38);"><span style="color:#8892BF;position:relative;z-index:2;">PHP</span></div>
+      <div class="skl"><span>PHP / Laravel</span><small>Server &amp; CMS</small></div>
     </div>
-  </section>
+    <div class="skc kc5">
+      <div class="skf" style="background:linear-gradient(135deg,#FFA61116,#FFA61138);"><span style="position:relative;z-index:2;font-size:2.5rem;">🔥</span></div>
+      <div class="skl"><span>Firebase</span><small>Auth &amp; Realtime DB</small></div>
+    </div>
+  </div>
+</section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact">
-    <div class="ambient" id="amb7"></div>
-    <div class="section-label">04 — Contact</div>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="amb ac" style="width:320px;height:320px;bottom:8%;right:4%;animation:f3 10s ease-in-out infinite;opacity:.45;"></div>
+  <div class="ey r">02 — experience</div>
+  <div class="st r">Where I've <em>worked</em></div>
+  <div class="tl">
 
-    <div class="contact-wrap">
-      <div class="contact-big reveal">Let's build<br>something<br><em>remarkable.</em></div>
-      <div class="contact-right">
-        <p class="contact-sub reveal">Open to freelance, full-time roles, and creative collaborations. Based in Ghana — working globally.</p>
-        <a href="mailto:ben.k.asumadu@gmail.com" class="cta-btn">
-          <span>Say Hello</span>
-          <div class="btn-glow"></div>
-        </a>
-        <div class="socials reveal">
-          <a href="https://github.com/benasdom" target="_blank">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/benjamin-domfeh-79b372309/" target="_blank">LinkedIn ↗</a>
-        </div>
+    <div class="tli rl">
+      <div class="tld"></div>
+      <div class="tlc">
+        <div class="tly">Feb 2025 — Apr 2025</div>
+        <h3>AI Data Trainer &amp; Operator Assistant</h3>
+        <div class="tlco">Invisible Technologies — Microsoft (QnA, Benchmarking, MMLU)</div>
+        <p>Engineered adversarial Python challenges to surface LLM failure modes. Worked across Microsoft's QnA pairs, benchmarking pipeline, and multi-task language understanding projects. Strict no-third-party-library protocol. 100% QC throughout.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Prompt Eng.</span><span class="tag">Markdown</span><span class="tag">LaTeX</span></div>
       </div>
     </div>
 
-    <footer>
-      <p>© 2025 Benjamin Asumadu Domfeh — Built with passion &amp; caffeine</p>
-      <p class="footer-right" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</p>
-    </footer>
-  </section>
+    <div class="tli rr">
+      <div class="tld"></div>
+      <div class="tlc">
+        <div class="tly">Jun 2024 — Sep 2024</div>
+        <h3>AI Data Trainer &amp; Operator Assistant</h3>
+        <div class="tlco">Invisible Technologies — Cohere Orochi</div>
+        <p>Discovered exploitable weaknesses in ChatGPT, Gemini, Claude, and Perplexity — DSA (binary trees, DFS), complex regex, matrix/grid rotations, and ASCII art. Shipped 20–30 tasks/week through QC. 200+ in production.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">DSA</span><span class="tag">Regex</span><span class="tag">Edge Cases</span></div>
+      </div>
+    </div>
 
- 
+    <div class="tli rl">
+      <div class="tld"></div>
+      <div class="tlc">
+        <div class="tly">Nov 2024 — Jan 2025</div>
+        <h3>Software Developer</h3>
+        <div class="tlco">Thrive UK — g_tree Scraper</div>
+        <p>Built a scraper pulling job listings from permitted URLs, automated recency filtering, handled credential persistence for long-running automation, and exported paginated data to Excel and CSV.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Scraping</span><span class="tag">Automation</span><span class="tag">Excel/CSV</span></div>
+      </div>
+    </div>
+
+    <div class="tli rr">
+      <div class="tld"></div>
+      <div class="tlc">
+        <div class="tly">2022 — 2023</div>
+        <h3>Software Developer — React Native</h3>
+        <div class="tlco">UnityElites Group — UE Commerce</div>
+        <p>Cross-platform e-commerce app (iOS, Android, Web). Firebase auth, Paystack payments, Redux state, regex-optimised search, email receipts, order tracking, customer accounts.</p>
+        <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Firebase</span><span class="tag">Paystack</span><span class="tag">Redux</span></div>
+      </div>
+    </div>
+
+    <div class="tli rl">
+      <div class="tld"></div>
+      <div class="tlc">
+        <div class="tly">2023</div>
+        <h3>Software Developer — React JS</h3>
+        <div class="tlco">UnityElites Group — UE Pasco</div>
+        <p>Free past-questions platform serving Ghanaian university students. Custom API endpoints, Telegram bot integration, and a UI that outperformed school-provided resources — driving significant traffic from UoG and others.</p>
+        <div class="tags"><span class="tag">React JS</span><span class="tag">Telegram Bot</span><span class="tag">API Design</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="amb ap" style="width:280px;height:280px;top:4%;left:2%;animation:f1 11s ease-in-out infinite;opacity:.45;"></div>
+  <div class="ey r">03 — projects</div>
+  <div class="st r">Selected <em>work</em></div>
+  <div class="pgrid">
+
+    <div class="pc ru" style="transition-delay:0s">
+      <div class="pth" style="background:linear-gradient(135deg,#61dafb14,#2c6fff26);">
+        <div class="pn">01</div><div class="ptf">React Native</div>
+      </div>
+      <div class="pb"><h3>UE Commerce</h3><p>Full e-commerce app — iOS, Android &amp; Web. Paystack, Firebase auth, Redux, email receipts, order tracking. Built with Expo for a Ghanaian community group.</p>
+      <div class="pl"><a href="https://github.com/benasdom" target="_blank" class="pla">Code ↗</a></div></div>
+    </div>
+
+    <div class="pc ru" style="transition-delay:.09s">
+      <div class="pth" style="background:linear-gradient(135deg,#00e5ff12,#3572A526);">
+        <div class="pn">02</div><div class="ptf">React JS</div>
+      </div>
+      <div class="pb"><h3>UE Pasco</h3><p>Past-questions platform serving Ghanaian university students. Custom API, Telegram bot integration, UI that outperformed institutional alternatives.</p>
+      <div class="pl"><a href="https://github.com/benasdom" target="_blank" class="pla">Code ↗</a></div></div>
+    </div>
+
+    <div class="pc ru" style="transition-delay:.18s">
+      <div class="pth" style="background:linear-gradient(135deg,#3572A518,#ff2cf314);">
+        <div class="pn">03</div><div class="ptf">Python</div>
+      </div>
+      <div class="pb"><h3>g_tree Job Scraper</h3><p>Automated job-ad scraper for Thrive UK. Filters by recency, persists credentials across sessions, exports paginated Excel &amp; CSV reports.</p>
+      <div class="pl"><a href="https://github.com/benasdom" target="_blank" class="pla">Code ↗</a></div></div>
+    </div>
+
+    <div class="pc ru" style="transition-delay:.27s">
+      <div class="pth" style="background:linear-gradient(135deg,#ff2cf314,#8892BF26);">
+        <div class="pn">04</div><div class="ptf">Laravel / PHP</div>
+      </div>
+      <div class="pb"><h3>PENSA-LEGON System</h3><p>Permission and credential management system for the Pentecost Students Association, University of Ghana, Legon.</p>
+      <div class="pl"><a href="https://github.com/benasdom" target="_blank" class="pla">Code ↗</a></div></div>
+    </div>
+
+    <div class="pc ru" style="transition-delay:.36s">
+      <div class="pth" style="background:linear-gradient(135deg,#ffa61114,#ff2cf314);">
+        <div class="pn">05</div><div class="ptf">PHP</div>
+      </div>
+      <div class="pb"><h3>NASA Consult Booking</h3><p>Booking and registration system for a travel &amp; tours agency. Procedural PHP, clean UI, form handling, and client data management.</p>
+      <div class="pl"><a href="https://github.com/benasdom" target="_blank" class="pla">Code ↗</a></div></div>
+    </div>
+
+    <div class="pc ru" style="transition-delay:.45s">
+      <div class="pth" style="background:linear-gradient(135deg,#2c6fff18,#00e5ff14);">
+        <div class="pn">06</div><div class="ptf">Python · AI</div>
+      </div>
+      <div class="pb"><h3>LLM Adversarial Suite</h3><p>Private Python challenge set that broke ChatGPT, Gemini, Claude, and Perplexity on DSA, regex, matrix ops, and ASCII art. Used in production AI training pipelines.</p>
+      <div class="pl"><a href="https://github.com/benasdom" target="_blank" class="pla">Code ↗</a></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="amb ap" style="width:460px;height:460px;bottom:-12%;left:50%;transform:translateX(-50%);animation:f1 15s ease-in-out infinite;opacity:.35;"></div>
+  <div class="ey r">04 — contact</div>
+  <div class="cl">
+    <div class="ch r">Let's build<br>something<br><em>remarkable.</em></div>
+    <div class="cr r">
+      <p>Open to freelance projects, full-time roles, and creative collaborations. Based in Ghana — working globally.</p>
+      <a href="mailto:ben.k.asumadu@gmail.com" class="bp" style="width:fit-content;">Say Hello ↗</a>
+      <div class="soc">
+        <a href="https://github.com/benasdom" target="_blank">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/benjamin-domfeh-79b372309/" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 Benjamin Asumadu Domfeh</p>
+    <p class="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</p>
+  </footer>
+</section>
+
+
 </body>
 </html>
